@@ -16,66 +16,54 @@
       "svg_path": "img/globe.svg"
     },
     {
-      "label": "First Social",
-      "url": "https://sample.com",
+      "label": "LinkedIn",
+      "url": "https:/linkedin.com",
       "svg_path": "img/linkedin.svg"
     },
     {
-      "label": "Second Social",
-      "url": "https://sample.com",
+      "label": "GitHub",
+      "url": "https://github.com/dpardigol/",
       "svg_path": "img/github.svg"
     }
   ],
   "work_experience": [
     {
-      "company": "Latest Job",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
+      "company": "Framatome",
+      "position": "",
+      "url": "https://www.framatome.com/fr/",
+      "start_date": "01/10/2020",
       "end_date": "Present",
-      "summary": "Short summary about present job and what the position entails",
+      "summary": "Mechanical engineering, Finite Element Modeling, AI and Data Science applied to the nuclear industry.",
       "highlights": [
-        "First Duty of Current Job",
-        "Second Duty of Current Job",
-        "Third Duty of Current Job"
-      ]
-    },
-    {
-      "company": "Previous Job",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous job and what that position entailed",
-      "highlights": [
-        "First Duty of Previous Job",
-        "Second Duty of Previous Job",
-        "Third Duty of Previous Job"
+        "Advanced Structural Analysis and Mechanical Design of Nuclear Components",
+        "Post-processing of industrial Finite Element models",
+        "Development of software tools in Python for data analysis and automation of engineering tasks",
+        "Statistical analysis and machine learning for sensitivity analysis and uncertainty quantification"
       ]
     }
   ],
   "projects": [
     {
-      "title": "My First Project",
-      "summary": "Short summary about my first project",
+      "title": "Mentor — Machine Learning Intern",
+      "summary": "Satistical analysis on thermal loads applied to primary loop piping systems in nuclear power plants",
       "url": "https://sample.com",
       "highlights": [
-        "First Highlight of Project One",
-        "Second Highlight of Project One",
-        "Third Highlight of Project One"
+        "Parametrization of thermal loads based on operational data",
+        "Clustering of thermal load patterns using unsupervised learning techniques",
+        "Maximal stress prediction using supervised learning algorithms"
       ],
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=1",
-          "caption": "Image Caption 1"
+          "img_path": "https://enterfea.com/wp-content/uploads/2022/09/2022.09-A7.png",
+          "caption": "Thermal loads"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=2",
-          "caption": "Image Caption 2"
+          "img_path": "https://www.sixt.tech/assets/clustering-algorithm/clustering-algorithms.jpg",
+          "caption": "Clustering"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=3",
-          "caption": "Image Caption 3"
+          "img_path": "https://www.iis.fraunhofer.de/en/ff/kom/ai/snn/jcr:content/stage/stageParsys/stage_slide_copy/image.img.jpg/1744275147124/snn-keyvisual.jpg",
+          "caption": "Neural Networks"
         }
       ]
     },
