@@ -137,6 +137,15 @@ section {
   grid-template-columns: 1fr;
 }
 
+.project-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center
+}
+
 .page-header,
 .page-footer {
   background: var(--header-footer-bg-color);
@@ -240,6 +249,11 @@ img {
 .main-gallery {
   grid-template-columns: 1fr;
 }
+
+.main-gallery > figure:only-child {
+  grid-column: 1 / -1;
+}
+
 
 .side-gallery {
   grid-template-columns: 1fr;

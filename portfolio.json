@@ -7,17 +7,12 @@
     "phone": "(+33) 7 80 00 80 62",
     "location": "Courbevoie, France"
   },
-  "summary": "A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.",
+  "summary": "I'm working as a mechanical engineer in the nuclear industry, specializing in structural analysis and data science. I have a strong background in Finite Element Modeling and Computational Mechanics, combined with expertise in AI and Machine Learning techniques. I'm passionate about leveraging data-driven approaches to solve complex engineering problems and optimize processes within the nuclear sector.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
-      "label": "Personal Website",
-      "url": "https://sample.com",
-      "svg_path": "img/globe.svg"
-    },
-    {
       "label": "LinkedIn",
-      "url": "https:/linkedin.com",
+      "url": "https://www.linkedin.com/in/david-pardigol-015b34155/",
       "svg_path": "img/linkedin.svg"
     },
     {
@@ -29,7 +24,7 @@
   "work_experience": [
     {
       "company": "Framatome",
-      "position": "",
+      "position": "Structural Analysis & Data Science Engineer",
       "url": "https://www.framatome.com/fr/",
       "start_date": "01/10/2020",
       "end_date": "Present",
@@ -44,9 +39,9 @@
   ],
   "projects": [
     {
-      "title": "Mentor — Machine Learning Intern",
+      "title": "Mentor — Machine Learning Intern — Framatome",
       "summary": "Satistical analysis on thermal loads applied to primary loop piping systems in nuclear power plants",
-      "url": "https://sample.com",
+      "slug": "statistical-analysis-thermal-loads",
       "highlights": [
         "Parametrization of thermal loads based on operational data",
         "Clustering of thermal load patterns using unsupervised learning techniques",
@@ -67,82 +62,49 @@
         }
       ]
     },
-    {
-      "title": "My Second Project",
-      "summary": "Short summary about my second project",
-      "url": "https://sample.com",
+   {
+      "title": "Mentor — Machine Learning Intern — Framatome",
+      "summary": "Satistical analysis on thermal loads applied to primary loop piping systems in nuclear power plants",
+      "slug": "statistical-analysis-thermal-loads",
       "highlights": [
-        "First Highlight of Project Two",
-        "Second Highlight of Project Two",
-        "Third Highlight of Project Two"
+        "Parametrization of thermal loads based on operational data",
+        "Clustering of thermal load patterns using unsupervised learning techniques",
+        "Maximal stress prediction using supervised learning algorithms"
       ],
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=4",
-          "caption": "Image Caption 4"
+          "img_path": "https://enterfea.com/wp-content/uploads/2022/09/2022.09-A7.png",
+          "caption": "Thermal loads"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=5",
-          "caption": "Image Caption 5"
+          "img_path": "https://www.sixt.tech/assets/clustering-algorithm/clustering-algorithms.jpg",
+          "caption": "Clustering"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=6",
-          "caption": "Image Caption 6"
+          "img_path": "https://www.iis.fraunhofer.de/en/ff/kom/ai/snn/jcr:content/stage/stageParsys/stage_slide_copy/image.img.jpg/1744275147124/snn-keyvisual.jpg",
+          "caption": "Neural Networks"
         }
-      ]
-    }
-  ],
-  "volunteer_experience": [
-    {
-      "organization": "Latest Organization",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present volunteer work",
-      "highlights": [
-        "First Duty of Current Organization",
-        "Second Duty of Current Organization",
-        "Third Duty of Current Organization"
-      ]
-    },
-    {
-      "organization": "Previous Organization",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous volunteer work",
-      "highlights": [
-        "First Duty of Previous Organization",
-        "Second Duty of Previous Organization",
-        "Third Duty of Previous Organization"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Institution One",
-      "location": "Institution One Location",
-      "url": "https://sample.com",
+      "institution": "ENSTA Institut Polytechnique de Paris",
+      "location": "Paris, France",
+      "url": "https://www.ensta.fr/",
       "degrees": [
-        "Master of Science in Computer Science",
-        "Minor in Mathematics"
+        "Master of mechanical engineering",
+        "Minor in Finite Element Modeling and Computational Mechanics"
       ],
-      "honors": ["Outstanding Student Award", "Dean's List"],
-      "gpa_cumulative": "3.5",
-      "gpa_major": "4.0",
-      "graduation_date": "01/01/2005"
+      "honors": ["Top 15% of the class"],
+      "graduation_date": "01/07/2020"
     },
     {
-      "institution": "Institution Two",
-      "location": "Institution Two Location",
-      "url": "https://sample.com",
-      "degrees": ["Bachelor of Science in Physics"],
-      "honors": ["Scholarship Recipient"],
-      "gpa_cumulative": "3.2",
-      "gpa_major": "3.9",
-      "graduation_date": "01/01/2000"
+      "institution": "CNAM Paris",
+      "location": "Paris, France",
+      "url": "https://www.cnam.fr/portail/conservatoire-national-des-arts-et-metiers-accueil-821166.kjsp",
+      "degrees": ["Specialization in Data Science and Machine Learning"],
+      "graduation_date": "01/08/2025"
     }
   ],
   "skills": [

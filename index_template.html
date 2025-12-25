@@ -141,8 +141,8 @@
               {% for project in projects %}
                 <section>
                   <h3>
-                    {% if project.url %}
-                      <a href="{{ project.url }}">{{ project.title }}</a>
+                    {% if project.slug %}
+                      <a href="projects/{{ project.slug }}.html">{{ project.title }}</a>
                     {% else %}
                       {{ project.title }}
                     {% endif %}

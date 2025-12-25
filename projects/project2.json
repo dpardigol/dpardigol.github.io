@@ -1,0 +1,101 @@
+{
+  "project": {
+    "title": "Mentor — Machine Learning Intern — Framatome",
+    "description": "Detailed project page for the Machine Learning Internship at Framatome: statistical analysis and machine learning applied to thermal loads in nuclear piping systems.",
+    "summary": "Detailed overview of the Machine Learning Internship at Framatome: statistical analysis and machine learning applied to thermal loads in nuclear piping systems.",
+    "url": "projects/statistical-analysis-thermal-loads.html",
+    "og_image": "https://enterfea.com/wp-content/uploads/2022/09/2022.09-A7.png",
+    "og_image_alt": "Thermal loads visualization",
+    "overview": {
+      "text": "This project focuses on analyzing thermal loads in primary loop piping systems in nuclear power plants. The goal was to apply data-driven techniques to model thermal stresses, detect patterns in operational data, and predict maximal stress locations using machine learning methods.",
+      "images": [
+        {
+          "url": "https://enterfea.com/wp-content/uploads/2022/09/2022.09-A7.png",
+          "alt": "Thermal loads visualization",
+          "caption": "Thermal loads on primary piping systems"
+        },
+        {
+          "url": "https://picsum.photos/600/338?random=11",
+          "alt": "Operational data sample",
+          "caption": "Sample of operational data used for analysis"
+        },
+        {
+          "url": "https://picsum.photos/600/338?random=11",
+          "alt": "Operational data sample",
+          "caption": "Sample of operational data used for analysis"
+        },
+        {
+          "url": "https://picsum.photos/600/338?random=11",
+          "alt": "Operational data sample",
+          "caption": "Sample of operational data used for analysis"
+        }
+      ]
+    },
+    "contributions": [
+      { "text": "Parametrization of thermal loads based on operational data from sensors and historical records." },
+      { "text": "Clustering of thermal load patterns to identify recurring operating regimes using unsupervised learning techniques." },
+      { "text": "Prediction of maximal stress using supervised learning models, helping to anticipate potential failure zones." },
+      { "text": "Visualization of thermal patterns and stress predictions for engineers using advanced plotting techniques." },
+      { "text": "Development of Python scripts for automating preprocessing and analysis pipelines." }
+    ],
+    "contributions_images": [
+      {
+        "url": "https://www.sixt.tech/assets/clustering-algorithm/clustering-algorithms.jpg",
+        "alt": "Clustering analysis",
+        "caption": "Clustering analysis of thermal load patterns"
+      },
+      {
+        "url": "https://picsum.photos/600/338?random=12",
+        "alt": "Python automation scripts",
+        "caption": "Python scripts used for data automation"
+      }
+    ],
+    "technical_details": [
+      {
+        "title": "Data Processing",
+        "text": "Raw operational data from nuclear piping systems was cleaned and normalized. Features such as temperature, pressure, and flow rates were extracted and prepared for analysis.",
+        "images": [
+          {
+            "url": "https://picsum.photos/600/338?random=13",
+            "alt": "Data preprocessing",
+            "caption": "Data preprocessing steps and normalization"
+          }
+        ]
+      },
+      {
+        "title": "Clustering Analysis",
+        "text": "Clustering algorithms such as K-Means and DBSCAN were applied to identify patterns in thermal load profiles. This enabled the classification of operational regimes for better understanding of stress variations.",
+        "images": [
+          {
+            "url": "https://picsum.photos/600/338?random=14",
+            "alt": "Clustering heatmap",
+            "caption": "Heatmap showing clustering of thermal loads"
+          }
+        ]
+      },
+      {
+        "title": "Stress Prediction",
+        "text": "Supervised learning models including Random Forest and Gradient Boosting were trained to predict maximal stress points based on operational conditions. Model performance was validated using cross-validation techniques.",
+        "images": [
+          {
+            "url": "https://www.iis.fraunhofer.de/en/ff/kom/ai/snn/jcr:content/stage/stageParsys/stage_slide_copy/image.img.jpg/1744275147124/snn-keyvisual.jpg",
+            "alt": "Neural Networks",
+            "caption": "Machine learning models for stress prediction"
+          }
+        ]
+      }
+    ],
+    "outcomes": [
+      "Efficient classification of thermal load patterns, improving predictive maintenance strategies.",
+      "Enhanced understanding of stress variations under different operating conditions.",
+      "Automated data analysis scripts reduced manual processing time by 50%.",
+      "Deliverables contributed to internal knowledge base at Framatome for nuclear piping analysis."
+    ],
+    "skills": [
+      "Practical application of unsupervised and supervised machine learning in an industrial context.",
+      "Handling large-scale operational datasets and performing feature engineering.",
+      "Experience in creating visualizations for engineering decision support.",
+      "Improved coding skills in Python for data analysis and automation."
+    ]
+  }
+}

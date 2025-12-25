@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Info -->
+    <title>{{ project.title }} | {{ author.name }}</title>
+    <meta name="description" content="{{ project.description }}">
+    <meta name="author" content="{{ author.name }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ project.title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ project.url }}">
+    {% if project.og_image %}
+      <meta property="og:image" content="{{ project.og_image }}">
+      <meta property="og:image:alt" content="{{ project.og_image_alt }}">
+    {% endif %}
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/modern_normalize.css">
+    <link rel="stylesheet" href="../css/html5bp.css">
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Set a theme color that matches your website's primary color -->
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- Favicon for all browsers -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+    <!-- Apple touch icon for iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
+
+    <!-- Web app manifest for Progressive Web Apps -->
+    <link rel="manifest" href="/site.webmanifest">
+
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="page-header">
+      <div class="container">
+        <div class="header-top flex-responsive">
+          {% if author.image_path %}
+            <img class="header-image"
+                 width="256"
+                 height="256"
+                 src="{{ author.image_path }}"
+                 alt="{{ author.name }} Profile Image">
+          {% endif %}
+
+          <div class="header-info">
+            <h1>{{ author.name }}</h1>
+            {% if author.label %}
+              <h2 class="header-label">{{ author.label }}</h2>
+            {% endif %}
+            {% if project.summary %}
+              <p class="header-summary">{{ project.summary }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="page-content">
+      <div class="project-content">
+        <main>
+
+          <section>
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+          </section>
+
+          <!-- OVERVIEW -->
+          <section>
+            <h2 class="section-heading">Project Overview</h2>
+            <p>{{ project.overview.text }}</p>
+
+            {% if project.overview.images %}
+              <div class="gallery main-gallery">
+                {% for img in project.overview.images %}
+                  <figure>
+                    <img width="600" height="338"
+                         src="{{ img.url }}"
+                         alt="{{ img.alt }}">
+                    <figcaption>{{ img.caption }}</figcaption>
+                  </figure>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </section>
+
+          <!-- CONTRIBUTIONS -->
+          <section>
+            <h2 class="section-heading">Key Contributions</h2>
+            <ul>
+              {% for c in project.contributions %}
+                <li>{{ c.text }}</li>
+              {% endfor %}
+            </ul>
+
+            {% if project.contributions_images %}
+              <div class="gallery main-gallery">
+                {% for img in project.contributions_images %}
+                  <figure>
+                    <img width="600" height="338"
+                         src="{{ img.url }}"
+                         alt="{{ img.alt }}">
+                    <figcaption>{{ img.caption }}</figcaption>
+                  </figure>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </section>
+
+          <!-- TECH DETAILS -->
+          <section>
+            <h2 class="section-heading">Technical Details</h2>
+
+            {% for detail in project.technical_details %}
+              <section>
+                <h3>{{ detail.title }}</h3>
+                <p>{{ detail.text }}</p>
+
+                {% if detail.images %}
+                  <div class="gallery main-gallery">
+                    {% for img in detail.images %}
+                      <figure>
+                        <img width="600" height="338"
+                             src="{{ img.url }}"
+                             alt="{{ img.alt }}">
+                        <figcaption>{{ img.caption }}</figcaption>
+                      </figure>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </section>
+            {% endfor %}
+          </section>
+
+          <!-- OUTCOMES -->
+          <section>
+            <h2 class="section-heading">Project Outcomes</h2>
+            <ul>
+              {% for o in project.outcomes %}
+                <li>{{ o }}</li>
+              {% endfor %}
+            </ul>
+          </section>
+
+          <!-- SKILLS -->
+          <section>
+            <h2 class="section-heading">Learnings & Skills Developed</h2>
+            <ul>
+              {% for s in project.skills %}
+                <li>{{ s }}</li>
+              {% endfor %}
+            </ul>
+          </section>
+
+          <section>
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+          </section>
+
+        </main>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <div class="container">
+        <p>© {{ current_year }} {{ author.name }}. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
